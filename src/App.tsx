@@ -54,7 +54,7 @@ function App() {
       if (apiResponse.success) {
         setResultMessage({
           type: "success",
-          message: `✅ Success! Player saved: ${scrapeResponse.data.name}`,
+          message: `Success! Player saved: ${scrapeResponse.data.name}`,
         });
       } else {
         throw new Error(apiResponse.message || "Failed to save player");
